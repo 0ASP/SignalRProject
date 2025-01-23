@@ -1,0 +1,60 @@
+﻿@model UpdateFeatureDto
+@{
+    ViewData["Title"] = "UpdateCategory";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Kategori İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Kategori Güncelleme Sayfası</div>
+                        </div>
+                        <input type="hidden" asp-for="FeatureID" />
+						<div class="card-body">
+							<div class="form-group">
+								<label for="Title1">Kategori Adını Giriniz</label>
+								<input type="text" class="form-control" asp-for="Title1" id="Title1">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="categoryName">Kategori Adını Giriniz</label>
+								<input type="text" class="form-control" asp-for="Description1" id="categoryName">
+							</div>
+						</div><div class="card-body">
+							<div class="form-group">
+								<label for="categoryName">Kategori Adını Giriniz</label>
+								<input type="text" class="form-control" asp-for="Title2" id="categoryName">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="categoryName">Kategori Adını Giriniz</label>
+								<input type="text" class="form-control" asp-for="Description2" id="categoryName">
+							</div>
+						</div><div class="card-body">
+							<div class="form-group">
+								<label for="categoryName">Kategori Adını Giriniz</label>
+								<input type="text" class="form-control" asp-for="Title3" id="categoryName">
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="form-group">
+								<label for="categoryName">Kategori Adını Giriniz</label>
+								<input type="text" class="form-control" asp-for="Description3" id="categoryName">
+							</div>
+						</div>
+                        <div class="card-action">
+                            <button class="btn btn-primary">Kategoriyi Güncelle</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

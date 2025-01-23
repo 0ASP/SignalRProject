@@ -1,0 +1,78 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butonlar Sayfası</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c; /* Siyah arka plan */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            gap: 20px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            color: #fff;
+        }
+
+        .admin-btn {
+            background-color: #ffcc00; /* Sarı renk */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .website-btn {
+            background-color: #333333; /* Koyu gri-siyah renk */
+            border: 2px solid #ffcc00; /* Sarı border */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover {
+            transform: scale(1.1); /* Hover efekti: butonları büyütme */
+        }
+
+        .btn:active {
+            transform: scale(1); /* Tıklama efekti: butonları normale döndürme */
+            background-color: #e6b800; /* Tıklama sonrası sarı tonunun koyulaşması */
+        }
+
+        .website-btn:hover {
+            background-color: #ffcc00; /* Sarı arka plan, hover efekti */
+            color: #333333; /* Metin rengi siyah */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/Statistic/Index" class="btn website-btn">ADMIN</a>
+        <a href="/Default/Index" class="btn website-btn">WEB SITESI</a>
+    </div>
+</body>
+</html>
